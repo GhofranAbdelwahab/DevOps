@@ -22,4 +22,6 @@ workflows:
   default:
     jobs:
       - say-hello
-      - say-world
+      - say-world:
+            requires:
+              - say-hello
